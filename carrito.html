@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrito de compras</title>
 </head>
+
 <body>
-    
+    <div>
+        <h1>Carrito</h1>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Acción</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Café</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>$ 1.000</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Té</td>
+                    <td>1</td>
+                    <td>—</td>
+                    <td>$ 350</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="2">Total productos</th>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>$ 1.350</td>
+                </tr>
+            </tfoot>
+        </table>
+        <h2>Productos seleccionados</h2>
+        <div id="cards">
+            <div>
+                <div>
+                    <img src="imgs/cafe.jpg" alt="Café" onerror="this.hidden = true">
+                    <div>
+                        <h3>Café</h3>
+                        <p>$ 500</p>
+                        <span>Seleccionado · 2 unidades</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="imgs/te.jpg" alt="Té" onerror="this.hidden = true">
+                    <div>
+                        <h3>Té</h3>
+                        <p>$ 350</p>
+                        <span>Seleccionado · 1 unidad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
