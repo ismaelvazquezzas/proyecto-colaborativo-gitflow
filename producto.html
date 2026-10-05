@@ -11,14 +11,14 @@
     <header>
         <div class="logo">GameStore</div>
         <ul class="nav-links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Carrito</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
         </ul>
     </header>
 
     <!-- Ruta de navegación (Breadcrumbs) -->
     <nav class="breadcrumb">
-        <a href="#">Inicio</a> &gt; <span>Call Of Duty</span>
+        <a href="index.html">Inicio</a> &gt; <span>Call Of Duty</span>
     </nav>
 
     <!-- Contenedor Principal del Producto -->
@@ -69,40 +69,38 @@
                 <span class="old-price">130.00 €</span>
             </div>
 
-            <!-- Formulario HTML de Selección de Plataforma y Edición -->
-            <form action="#" method="post">
-                <div class="options-group">
-                    <label class="title">Selecciona la plataforma:</label>
-                    <div class="radio-options">
-                        <input type="radio" id="plat-pc" name="platform" checked>
-                        <label for="plat-pc">PC (Steam)</label>
+<!-- Formulario HTML de Selección de Plataforma y Edición -->
+<form action="carrito.html" method="get">
+    <div class="options-group">
+        <label class="title">Selecciona la plataforma:</label>
+        <div class="radio-options">
+            <input type="radio" id="plat-pc" name="platform" checked>
+            <label for="plat-pc">PC (Steam)</label>
 
-                        <input type="radio" id="plat-ps5" name="platform">
-                        <label for="plat-ps5">PlayStation 5</label>
+            <input type="radio" id="plat-ps5" name="platform">
+            <label for="plat-ps5">PlayStation 5</label>
 
-                        <input type="radio" id="plat-xbox" name="platform">
-                        <label for="plat-xbox">Xbox Series X</label>
-                    </div>
-                </div>
+            <input type="radio" id="plat-xbox" name="platform">
+            <label for="plat-xbox">Xbox Series X</label>
+        </div>
+    </div>
 
-                <div class="options-group" style="margin-top: 15px;">
-                    <label class="title">Selecciona la edición:</label>
-                    <div class="radio-options">
-                        <input type="radio" id="ed-standard" name="edition" checked>
-                        <label for="ed-standard">Estándar</label>
+    <div class="options-group" style="margin-top: 15px;">
+        <label class="title">Selecciona la edición:</label>
+        <div class="radio-options">
+            <input type="radio" id="ed-standard" name="edition" checked>
+            <label for="ed-standard">Estándar</label>
 
-                        <input type="radio" id="ed-deluxe" name="edition">
-                        <label for="ed-deluxe">Deluxe (+10€)</label>
-                    </div>
-                </div>
+            <input type="radio" id="ed-deluxe" name="edition">
+            <label for="ed-deluxe">Deluxe (+10€)</label>
+        </div>
+    </div>
 
-                <div class="actions-form" style="margin-top: 25px;">
-                    <button type="submit" class="btn btn-buy">Añadir al Carrito</button>
-                    <button type="button" class="btn btn-wishlist" title="Añadir a la lista de deseos">♥</button>
-                </div>
-            </form>
-        </section>
-    </main>
+    <div class="actions-form" style="margin-top: 25px;">
+        <button type="submit" class="btn btn-buy">Añadir al Carrito</button>
+        <button type="button" class="btn btn-wishlist" title="Añadir a la lista de deseos">♥</button>
+    </div>
+</form>
 
     <!-- Sección de Pestañas con CSS Radio Hack -->
     <section class="tabs-section">
