@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CYBER ODYSSEY 2077 - Tienda de Videojuegos</title>
+    <title>Call Of Duty - Tienda de Videojuegos</title>
 </head>
 <body>
 
     <!-- Navegación -->
     <header>
-        <div class="logo">⚡ GAMESTORE</div>
+        <div class="logo">GameStore</div>
         <ul class="nav-links">
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Catálogo</a></li>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Soporte</a></li>
+            <li><a href="#">Carrito</a></li>
         </ul>
     </header>
 
     <!-- Ruta de navegación (Breadcrumbs) -->
     <nav class="breadcrumb">
-        <a href="#">Inicio</a> &gt; <a href="#">Juegos de Acción</a> &gt; <span>Cyber Odyssey 2077</span>
+        <a href="#">Inicio</a> &gt; <span>Call Of Duty</span>
     </nav>
 
     <!-- Contenedor Principal del Producto -->
@@ -36,25 +34,19 @@
 
             <!-- Visor de imagen grande (Imágenes de la versión inicial) -->
             <div class="main-image-viewport">
-                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Cyber Odyssey Gameplay 1" class="img-1">
-                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="Cyber Odyssey Gameplay 2" class="img-2">
-                <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&q=80" alt="Cyber Odyssey Gameplay 3" class="img-3">
-                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Cyber Odyssey Gameplay 4" class="img-4">
+                <img src="imgs\call_of_duty.jpg" alt="Call Of Duty" class="img-1">
             </div>
 
             <!-- Miniaturas para seleccionar imagen mediante etiquetas label -->
             <div class="thumbnails">
                 <label for="img-1" class="thumbnail-label">
-                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=200&q=80" alt="Vista previa 1">
+                    <img src="imgs\cod_gameplay_1.jpeg" alt="Call Of Duty Gameplay 1">
                 </label>
                 <label for="img-2" class="thumbnail-label">
-                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=200&q=80" alt="Vista previa 2">
+                    <img src="imgs\cod_gameplay_2.jpeg" alt="Call Of Duty Gameplay 2">
                 </label>
                 <label for="img-3" class="thumbnail-label">
-                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=200&q=80" alt="Vista previa 3">
-                </label>
-                <label for="img-4" class="thumbnail-label">
-                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=200&q=80" alt="Vista previa 4">
+                    <img src="imgs\cod_gameplay_3.jpeg" alt="Call Of Duty Gameplay 3">
                 </label>
             </div>
         </section>
@@ -66,7 +58,7 @@
                 <span class="badge">Clave Digital</span>
             </div>
 
-            <h1 class="product-title">Cyber Odyssey 2077</h1>
+            <h1 class="product-title">Call Of Duty</h1>
 
             <div class="meta-info">
                 <span class="stars">★★★★★</span>
@@ -74,9 +66,7 @@
             </div>
 
             <div class="price-section">
-                <span class="current-price">39.99 €</span>
-                <span class="old-price">59.99 €</span>
-                <span class="discount-tag">-33% OFF</span>
+                <span class="old-price">130.00 €</span>
             </div>
 
             <!-- Formulario HTML de Selección de Plataforma y Edición -->
@@ -113,7 +103,61 @@
             </form>
         </section>
     </main>
-    
+
+    <!-- Sección de Pestañas con CSS Radio Hack -->
+    <section class="tabs-section">
+        <!-- Radios ocultos de control de pestañas -->
+        <input type="radio" id="tab-desc" name="tabs" class="tab-input" checked>
+        <input type="radio" id="tab-specs" name="tabs" class="tab-input">
+        <input type="radio" id="tab-reviews" name="tabs" class="tab-input">
+
+        <!-- Cabecera de Pestañas -->
+        <div class="tab-headers">
+            <label for="tab-desc" class="tab-header-label">Descripción</label>
+            <label for="tab-specs" class="tab-header-label">Requisitos</label>
+            <label for="tab-reviews" class="tab-header-label">Opiniones</label>
+        </div>
+
+        <!-- Contenido Pestaña 1: Descripción -->
+        <div class="tab-content content-desc">
+            <p>Sumérgete en el universo futurista de <strong>Cyber Odyssey 2077</strong>. Explora una megalópolis gigantesca dominada por las corporaciones, modifica tu personaje con implantes cibernéticos y toma decisiones que cambiarán la historia y el mundo que te rodea.</p>
+        </div>
+
+        <!-- Contenido Pestaña 2: Requisitos -->
+        <div class="tab-content content-specs">
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <strong>Sistema Operativo</strong>
+                    <span>Windows 10 / 11 (64-bit)</span>
+                </div>
+                <div class="spec-item">
+                    <strong>Procesador</strong>
+                    <span>Intel Core i7-8700K / AMD Ryzen 5 3600</span>
+                </div>
+                <div class="spec-item">
+                    <strong>Memoria RAM</strong>
+                    <span>16 GB RAM</span>
+                </div>
+                <div class="spec-item">
+                    <strong>Tarjeta Gráfica</strong>
+                    <span>NVIDIA RTX 2070 / AMD Radeon RX 5700 XT</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido Pestaña 3: Opiniones -->
+        <div class="tab-content content-reviews">
+            <div class="review-card">
+                <div class="review-author">GamerPro99 <span class="stars">★★★★★</span></div>
+                <p>Increíble apartado gráfico y la jugabilidad es súper fluida. Totalmente recomendado.</p>
+            </div>
+            <div class="review-card">
+                <div class="review-author">Alex_Cyber <span class="stars">★★★★☆</span></div>
+                <p>La historia es espectacular, aunque requiere un PC con buenas especificaciones.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Pie de página -->
     <footer>
         <p>&copy; 2026 GameStore Inc. Todos los derechos reservados. HTML & CSS Puro.</p>
