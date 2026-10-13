@@ -2,12 +2,12 @@
 	color-scheme: dark;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 	;
-	--bg: #111318;
-	--surface: #1d2129;
+	--bg: #616d8b;
+	--surface: #040405;
 	--border: #373d48;
 	--text: #f2f4f7;
 	--muted: #a7adba;
-	--accent: #9bd957;
+	--accent: #f0d01f;
 }
 
 * {
