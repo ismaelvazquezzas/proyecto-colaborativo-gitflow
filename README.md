@@ -11,7 +11,7 @@ Plataforma web de catálogo y venta de videojuegos digitales para PC y consolas.
 |---|---|---|
 | Ismael Vázquez | @ismaelvazquezzas | Maquetación de `index.html` y estilos base de la cabecera |
 | Mateo Cotrofe | @MateoCotrofe | Estructura de `producto.html` y galería interactiva |
-| Guillermo Domínguez | @pitocondria | Diseño de `carrito.html` y tabla de pedidos |
+| Guillermo Domínguez | @pitocondria | Diseño de `carrito.html`, tabla de pedidos y `styles.css`|
 | Ismael Piñeiro | @ipineiroamonda | Creación de `README.md`, documentación |
 
 ---
@@ -25,5 +25,5 @@ gamestore/
 ├── index.html        # Portada, sección Hero, catálogo de destacados y versión en el footer
 ├── producto.html     # Ficha de detalle del juego (Cyber Odyssey) con galería interactiva
 ├── carrito.html      # Resumen de compra, tabla de pedidos e importes totales
-├── estilos.css       # Hoja de estilos compartida para todo el sitio
+├── styles.css       # Hoja de estilos compartida para todo el sitio
 └── README.md         # Documentación oficial del proyecto
