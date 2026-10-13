@@ -24,7 +24,7 @@
 header,
 footer {
 	padding: 18px 5%;
-	background: #191c22;
+	background: #11038f;
 }
 
 header {
@@ -126,7 +126,7 @@ footer {
 	border: 0;
 	border-radius: 4px;
 	background: var(--accent);
-	color: #18200f;
+	color: #080708;
 	font-weight: 700;
 	cursor: pointer;
 }
@@ -173,16 +173,16 @@ footer {
 .badge,
 .discount-tag {
 	padding: 4px 8px;
-	background: #2a303a;
+	background: #11038f;
 }
 
 .badge-primary {
 	background: var(--accent);
-	color: #18200f;
+	color: #0b0a0b;
 }
 
 .stars {
-	color: #f2c14e;
+	color: #4ef2f2;
 }
 
 .contenido table {
