@@ -6,80 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de compras</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <div class="logo">GameStore</div>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
+            <ul class="nav-links">
+                <li><a href="index.html" class="btn">Inicio</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="contenido">
-        <div>
+        <div class="options-group">
 
-            <h1>Carrito</h1>
+            <h1> Carrito de compras</h1>
             <hr>
             <table>
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Item</th>
+                        <th scope="col">Producto</th>
                         <th scope="col">Cantidad</th>
-                        <th scope="col">Total</th>
+                        <th scope="col">Subtotal</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <th scope="row">1</th>
                         <td>Super Mario</td>
-                        <td>2</td>
-                        <td>$ 100</td>
+                        <td><span class="badge">2 uds.</span></td>
+                        <td class="game-price">$ 100</td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
                         <td>Call of Duty</td>
-                        <td>1</td>
-                        <td>$ 130</td>
+                        <td><span class="badge">1 ud.</span></td>
+                        <td class="game-price">$ 130</td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th scope="row" colspan="2">Total productos</th>
-                        <td>3</td>
-                        <td>$ 230</td>
+                        <th scope="row" colspan="2">Total a pagar</th>
+                        <td><span class="badge badge-primary">3 productos</span></td>
+                        <td class="current-price">$ 230</td>
                     </tr>
                 </tfoot>
             </table>
+
             <h2>Productos seleccionados</h2>
-            <div id="cards">
-                <div>
+            <div id="cards" class="games-grid">
+                <div class="game-card">
                     <div>
                         <img src="imgs/super_mario.jpg" alt="Super Mario" onerror="this.hidden = true">
-                        <div>
+                        <div class="price-section">
                             <h3>Super Mario</h3>
-                            <p>$ 100</p>
-                            <span>Seleccionado · 2 unidades</span>
+                            <p class="game-price">$ 100</p>
+                            <span class="badge">Seleccionado · 2 unidades</span>
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="game-card">
                     <div>
-                        <img src="imgs/call_of_duty.jpg" alt="Call of Duty"
-                            onerror="this.hidden = true">
-                        <div>
+                        <img src="imgs/call_of_duty.jpg" alt="Call of Duty" onerror="this.hidden = true">
+                        <div class="price-section">
                             <h3><a href="producto.html">Call of Duty</a></h3>
-                            <p>$ 130</p>
-                            <span>Seleccionado · 1 unidad</span>
+                            <p class="game-price">$ 130</p>
+                            <span class="badge">Seleccionado · 1 unidad</span>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
+    </div>
 
 </body>
 
