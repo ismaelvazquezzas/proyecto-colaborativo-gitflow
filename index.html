@@ -1,265 +1,93 @@
 <!DOCTYPE html>
-<html lang="es">
-    <style>
-        
-       
-        :root {
-            --primary-color: #6366f1; /* Azul índigo para botones y acentos */
-            --secondary-color: #1e1e2f; /* Fondo oscuro para header/footer */
-            --background-color: #0f0f17; /* Fondo principal muy oscuro */
-            --text-color: #f8fafc; /* Texto claro */
-            --card-bg: #1e293b; /* Fondo de las tarjetas de los juegos */
-            --accent-color: #22c55e; /* Verde para los precios */
-        }
+<html lang="es" class="dark">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="style.css">
 
-    
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-    
-        body {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-    
-        header {
-            background-color: var(--secondary-color);
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky; /* Mantiene el menú en la parte superior al hacer scroll */
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        nav ul li a:hover {
-            color: var(--primary-color);
-            transition: color 0.3s ease;
-        }
-
-    
-        .hero {
-            /* Fondo con imagen oscurecida usando un gradiente superpuesto */
-            background: linear-gradient(rgba(15, 15, 23, 0.7), rgba(15, 15, 23, 1)), 
-                        url('https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            color: #cbd5e1;
-        }
-
-       
-        .catalog {
-            padding: 4rem 5%;
-        }
-
-        .catalog h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: var(--text-color);
-        }
-
-        .games-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2.5rem;
-        }
-
-        .game-card {
-            background-color: var(--card-bg);
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .game-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
-        }
-
-        .game-card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-        }
-
-        .game-info {
-            padding: 1.5rem;
-        }
-
-        .game-title {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .game-genre {
-            font-size: 0.9rem;
-            color: #94a3b8;
-            margin-bottom: 1rem;
-        }
-
-        .game-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 1rem;
-        }
-
-        .game-price {
-            font-size: 1.4rem;
-            font-weight: bold;
-            color: var(--accent-color);
-        }
-
-        .btn {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 0.6rem 1.2rem;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #4f46e5;
-        }
-
-        .btn-large {
-            padding: 1rem 2rem;
-            font-size: 1.2rem;
-        }
-
-        footer {
-            background-color: var(--secondary-color);
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-            border-top: 1px solid #334155;
-        }
-
-        footer p {
-            color: #94a3b8;
-        }
-    </style>
 </head>
-<body>
 <header>
-        <div class="logo">GameStore</div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Carrito</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="logo">GameStore</div>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Catálogo</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Soporte</a></li>
+        </ul>
+    </nav>
 
-    <section class="hero">
-        <h1>Descubre tu próxima aventura</h1>
-        <p>Los mejores títulos para PC y consolas en formato digital.</p>
+</header>
 
-    </section>
+<section class="hero">
+    <h1>Descubre tu próxima aventura</h1>
+    <p>Los mejores títulos para PC y consolas en formato digital.</p>
+    <button class="btn btn-large">Ver Catálogo</button>
+</section>
 
-    
-    <main class="catalog">
-        <h2>Juegos Destacados</h2>
-        
-        <div class="games-grid">
-            
-            <article class="game-card">
-                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Juego de Acción">
-                <div class="game-info">
-                    <h3 class="game-title">Cyber Odyssey 2088</h3>
-                    <p class="game-genre">Acción / RPG</p>
-                    <div class="game-footer">
-                        <span class="game-price">49.99€</span>
-                        <button class="btn">Comprar</button>
-                    </div>
+
+<main class="catalog">
+    <h2>Juegos Destacados</h2>
+
+    <div class="games-grid">
+
+        <article class="game-card">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Juego de Acción">
+            <div class="game-info">
+                <h3 class="game-title">Cyber Odyssey 2088</h3>
+                <p class="game-genre">Acción / RPG</p>
+                <div class="game-footer">
+                    <span class="game-price">49.99€</span>
+                    <button class="btn">Comprar</button>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <article class="game-card">
-                <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Juego de Estrategia">
-                <div class="game-info">
-                    <h3 class="game-title">Kingdoms Fall</h3>
-                    <p class="game-genre">Estrategia en Tiempo Real</p>
-                    <div class="game-footer">
-                        <span class="game-price">29.99€</span>
-                        <button class="btn">Comprar</button>
-                    </div>
+        <article class="game-card">
+            <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Juego de Estrategia">
+            <div class="game-info">
+                <h3 class="game-title">Kingdoms Fall</h3>
+                <p class="game-genre">Estrategia en Tiempo Real</p>
+                <div class="game-footer">
+                    <span class="game-price">29.99€</span>
+                    <button class="btn">Comprar</button>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <article class="game-card">
-                <img src="https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Juego de Carreras">
-                <div class="game-info">
-                    <h3 class="game-title">Velocity Redline</h3>
-                    <p class="game-genre">Simulación / Carreras</p>
-                    <div class="game-footer">
-                        <span class="game-price">39.99€</span>
-                        <button class="btn">Comprar</button>
-                    </div>
+        <article class="game-card">
+            <img src="https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Juego de Carreras">
+            <div class="game-info">
+                <h3 class="game-title">Velocity Redline</h3>
+                <p class="game-genre">Simulación / Carreras</p>
+                <div class="game-footer">
+                    <span class="game-price">39.99€</span>
+                    <button class="btn">Comprar</button>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <article class="game-card">
-                <img src="imgs\call_of_duty.jpg" alt="Juego de Supervivencia">
-                <div class="game-info">
-                    <h3 class="game-title">Call of Duty</h3>
-                    <p class="game-genre">Disparos / Multijugador</p>
-                    <div class="game-footer">
-                        <span class="game-price">130.00€</span>
-                        <button class="btn">Comprar</button>
-                    </div>
+        <article class="game-card">
+            <img src="imgs\call_of_duty.jpg" alt="Juego de Supervivencia">
+            <div class="game-info">
+                <h3 class="game-title">Call of Duty</h3>
+                <p class="game-genre">Disparos / Multijugador</p>
+                <div class="game-footer">
+                    <span class="game-price">130.00€</span>
+                    <button class="btn">Comprar</button>
+                </div>
 
-        </div>
-    </main>
-    
-    <footer>
-        <p>&copy; 2026 GameStore. Todos los derechos reservados.</p>
-    </footer>
+            </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 GameStore. Todos los derechos reservados.</p>
+</footer>
 
 </body>
+
 </html>
