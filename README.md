@@ -2,7 +2,10 @@
 
 Plataforma web de catálogo y venta de videojuegos digitales para PC y consolas. Proyecto desarrollado en equipo aplicando el flujo de trabajo colaborativo **GitFlow**, gestión de tareas mediante tablero **Kanban** y despliegue continuo en **GitHub Pages**.
 
--  **Sitio web en producción (GitHub Pages):** [https://github.com/users/ismaelvazquezzas/projects/2]
+-  **Sitio web en producción (GitHub Pages):** [https://github.com/ismaelvazquezzas/proyecto-colaborativo-gitflow/deployments/github-pages] 
+
+-  **Enlace al tablero del tablero Kanban:** [https://github.com/users/ismaelvazquezzas/projects/2]
+
 ---
 
 ##  Integrantes del equipo
@@ -36,4 +39,3 @@ v0.1.0 => version preliminar de ejemplo.
 
 v1.0.0 => version final de entrega.
 ```
-
