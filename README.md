@@ -22,8 +22,18 @@ El sitio web está compuesto por páginas HTML enlazadas con una navegación com
 
 ```text
 gamestore/
-├── index.html        # Portada, sección Hero, catálogo de destacados y versión en el footer
-├── producto.html     # Ficha de detalle del juego (Cyber Odyssey) con galería interactiva
+├── index.html        # Portada, catálogo de destacados y versión en el footer
+├── producto.html     # Ficha de detalle del juego (Call of duty) con galería interactiva
 ├── carrito.html      # Resumen de compra, tabla de pedidos e importes totales
 ├── estilos.css       # Hoja de estilos compartida para todo el sitio
 └── README.md         # Documentación oficial del proyecto
+```
+
+## Versiones publicadas
+
+```
+v0.1.0 => version preliminar de ejemplo.
+
+v1.0.0 => version final de entrega.
+```
+
