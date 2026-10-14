@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CYBER ODYSSEY 2077 - Tienda de Videojuegos</title>
+    <title>Call Of Duty - Tienda de Videojuegos</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
     <!-- Navegación -->
     <header>
-        <div class="logo">⚡ GAMESTORE</div>
+        <div class="logo">GameStore</div>
         <ul class="nav-links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Catálogo</a></li>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Soporte</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
         </ul>
     </header>
 
     <!-- Ruta de navegación (Breadcrumbs) -->
     <nav class="breadcrumb">
-        <a href="#">Inicio</a> &gt; <a href="#">Juegos de Acción</a> &gt; <span>Cyber Odyssey 2077</span>
+        <a href="index.html">Inicio</a> &gt; <span>Call Of Duty</span>
     </nav>
 
     <!-- Contenedor Principal del Producto -->
     <main class="product-container">
-        
+
         <!-- Galería de Imágenes mediante CSS Radio Inputs -->
         <section class="gallery-container">
             <!-- Radios de control ocultos -->
@@ -36,28 +38,129 @@
 
             <!-- Visor de imagen grande (Imágenes de la versión inicial) -->
             <div class="main-image-viewport">
-                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Cyber Odyssey Gameplay 1" class="img-1">
-                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="Cyber Odyssey Gameplay 2" class="img-2">
-                <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&q=80" alt="Cyber Odyssey Gameplay 3" class="img-3">
-                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Cyber Odyssey Gameplay 4" class="img-4">
+                <img src="imgs\call_of_duty_portada.jpg"
+                    alt="COD Gameplay 1" class="img-1">
+                <img src="imgs\cod_gameplay_1.jpeg"
+                    alt="COD Gameplay 2" class="img-2">
+                <img src="imgs\cod_gameplay_2.jpeg"
+                    alt="COD Gameplay 3" class="img-3">
+                <img src="imgs\cod_gameplay_3.jpeg"
+                    alt="COD Gameplay 4" class="img-4">
             </div>
 
             <!-- Miniaturas para seleccionar imagen mediante etiquetas label -->
             <div class="thumbnails">
                 <label for="img-1" class="thumbnail-label">
-                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=200&q=80" alt="Vista previa 1">
+                    <img src="imgs\call_of_duty_portada.jpg"
+                        alt="Vista previa 1">
                 </label>
                 <label for="img-2" class="thumbnail-label">
-                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=200&q=80" alt="Vista previa 2">
+                    <img src="imgs\cod_gameplay_1.jpeg"
+                        alt="Vista previa 2">
                 </label>
                 <label for="img-3" class="thumbnail-label">
-                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=200&q=80" alt="Vista previa 3">
+                    <img src="imgs\cod_gameplay_2.jpeg"
+                        alt="Vista previa 3">
                 </label>
                 <label for="img-4" class="thumbnail-label">
-                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=200&q=80" alt="Vista previa 4">
+                    <img src="imgs\cod_gameplay_3.jpeg"
+                        alt="Vista previa 4">
                 </label>
             </div>
         </section>
+
+        <!-- Información y Opciones de Compra -->
+        <section class="product-details">
+            <div class="badge-container">
+                <span class="badge badge-primary">Novedad</span>
+                <span class="badge">Clave Digital</span>
+            </div>
+
+            <h1 class="product-title">Call Of Duty</h1>
+
+            <div class="meta-info">
+                <span class="stars">★★★★★</span>
+                <span>4.8 / 5.0 (1,240 valoraciones)</span>
+            </div>
+
+            <div class="price-section">
+                <span class="old-price">130.00 €</span>
+            </div>
+
+<!-- Formulario HTML de Selección de Plataforma y Edición -->
+<form action="carrito.html" method="get">
+    <div class="options-group">
+        <label class="title">Selecciona la plataforma:</label>
+        <div class="radio-options">
+            <input type="radio" id="plat-pc" name="platform" checked>
+            <label for="plat-pc">PC (Steam)</label>
+
+            <input type="radio" id="plat-ps5" name="platform">
+            <label for="plat-ps5">PlayStation 5</label>
+
+            <input type="radio" id="plat-xbox" name="platform">
+            <label for="plat-xbox">Xbox Series X</label>
+        </div>
+    </div>
+
+    <div class="options-group" style="margin-top: 15px;">
+        <label class="title">Selecciona la edición:</label>
+        <div class="radio-options">
+            <input type="radio" id="ed-standard" name="edition" checked>
+            <label for="ed-standard">Estándar</label>
+
+            <input type="radio" id="ed-deluxe" name="edition">
+            <label for="ed-deluxe">Deluxe (+10€)</label>
+        </div>
+    </div>
+
+    <div class="actions-form" style="margin-top: 25px;">
+        <button type="submit" class="btn btn-buy">Añadir al Carrito</button>
+        <button type="button" class="btn btn-wishlist" title="Añadir a la lista de deseos">♥</button>
+    </div>
+</form>
+
+    <!-- Sección de Pestañas con CSS Radio Hack -->
+    <section class="tabs-section">
+        <!-- Descripción -->
+        <div class="tab-content content-desc">
+            <p>Sumérgete en el universo de <strong>Call Of Duty</strong>. Explora una guerra gigantesca dominada por los gobiernos, modifica tu personaje con equipamiento táctico único y toma decisiones que cambiarán la historia y el mundo que te rodea.</p>
+        </div>
+
+        <!-- Requisitos -->
+        <div class="tab-content content-specs">
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <strong>Sistema Operativo</strong>
+                    <span>Windows 10 / 11 (64-bit)</span>
+                </div>
+                <div class="spec-item">
+                    <strong>Procesador</strong>
+                    <span>Intel Core i7-8700K / AMD Ryzen 5 3600</span>
+                </div>
+                <div class="spec-item">
+                    <strong>Memoria RAM</strong>
+                    <span>16 GB RAM</span>
+                </div>
+                <div class="spec-item">
+                    <strong>Tarjeta Gráfica</strong>
+                    <span>NVIDIA RTX 2070 / AMD Radeon RX 5700 XT</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Opiniones -->
+        <div class="tab-content content-reviews">
+            <div class="review-card">
+                <div class="review-author">GamerPro99 <span class="stars">★★★★★</span></div>
+                <p>Increíble apartado gráfico y la jugabilidad es súper fluida. Totalmente recomendado.</p>
+            </div>
+            <div class="review-card">
+                <div class="review-author">Alex_Cyber <span class="stars">★★★★☆</span></div>
+                <p>La historia es espectacular, aunque requiere un PC con buenas especificaciones.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Pie de página -->
     <footer>
@@ -65,4 +168,5 @@
     </footer>
 
 </body>
+
 </html>
